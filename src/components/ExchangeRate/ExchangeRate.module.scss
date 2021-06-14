@@ -1,0 +1,16 @@
+@import "../../utils/styles/colors.scss";
+
+.container {
+  width: 90%;
+
+  margin: 24px 0 8px 0;
+  padding: 16px 0;
+  border-top: 1px solid $color-grey-light;
+
+  .inputGroup {
+    &:first-child {
+      margin-top: 0;
+    }
+    margin: 16px 0;
+  }
+}
