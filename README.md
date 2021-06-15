@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 To run the project first run `npm run install` followed by `npm run start`.
 To run tests run `npm run test`.
 
@@ -22,3 +23,6 @@ Improvements to be considered:
 - Right now all rates are set with fixed decimal places. However, there are cases (e.g. JPY -> BTC) where we have weak vs strong currencies, and therefore price will show as 0.0000.
 
 Thanks :)
+=======
+To run the project first run `npm run install` followed by `npm run start`
+>>>>>>> a858b06dfaa773f41a8d053a50333abb813d3897
