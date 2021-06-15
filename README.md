@@ -9,7 +9,7 @@ Features:
 - Dynamically search for currency pairs and update them in real time.
 - Pick date from the calendar to search for past data.
 - Clear past data by clicking the calendar icon.
-- Add base currency to favorites by clicking the start icon.
+- Add base currency to favorites by clicking the star icon.
 
 Things to be aware of:
 
