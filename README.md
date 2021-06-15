@@ -19,6 +19,6 @@ Improvements to be considered:
 
 - Tests need major improvements. API requests should be mocked and tested too.
 - There are occasional visual issues on front-end, such as misalignment when data is longer, or when resolution is changed in real time.
-- Right now all rates are set with fixed decimal places. However, there are cases (e.g. JPY -> BTC) where we have weak vs strong currencies, and therefore price will show as 0.0000.
+- Right now all rates are set with fixed decimal places. However, there are cases (e.g. JPY -> BTC) where we have relatively cheap vs strong currencies, and therefore price will show as 0.0000.
 
 Thanks :)
