@@ -1,4 +1,4 @@
-To run the project first run `npm run install` followed by `npm run start`.
+To run the project first run `npm install` followed by `npm run start`.
 To run tests run `npm run test`.
 
 For the best experience I recommend using this app in mobile view.
