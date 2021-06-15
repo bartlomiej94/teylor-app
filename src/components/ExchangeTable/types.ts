@@ -1,8 +1,12 @@
-import { G_TRateSelectedCurrencies } from "../../types/globalTypes";
+import {
+  G_TRateSelectedCurrencies,
+  G_IRatesMap,
+  G_TPastData,
+} from "../../types/globalTypes";
 
 export type TExchangeTable = {
-  liveData: any;
-  pastData: any;
+  liveData?: G_IRatesMap;
+  pastData?: G_TPastData[];
   selectedCurrencies: G_TRateSelectedCurrencies;
   isDateRangeSelected: boolean;
   baseCurrencyAmount: number;

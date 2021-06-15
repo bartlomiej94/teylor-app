@@ -7,8 +7,6 @@ export const calcCurrencyPairRate = (
 ) => {
   if (!data || selectedCurrencies.includes(null)) return;
 
-  console.log(data);
-
   const baseCurrencyValue = objectToCurrencyValue(data, selectedCurrencies[0]);
   const quoteCurrencyValue = objectToCurrencyValue(data, selectedCurrencies[1]);
 

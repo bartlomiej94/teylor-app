@@ -8,7 +8,7 @@ import {
 } from "../../types/globalTypes";
 
 export const mapOtherCurrenciesData = (
-  data: G_IRatesMap,
+  data: G_IRatesMap | undefined,
   baseCurrencyAmount: number
 ) => {
   if (!data || !baseCurrencyAmount) return;
@@ -27,18 +27,18 @@ export const mapOtherCurrenciesData = (
 };
 
 export const mapPastData = (
-  data: G_TPastData[],
+  data: G_TPastData[] | undefined,
   baseCurrencyAmount: number,
   selectedCurrencies: G_TRateSelectedCurrencies
 ) => {
   if (!data) return;
 
   const dataSource: TPastDataSource[] = data.map((item: G_TPastData) => {
-    const rate = calcCurrencyPairRate(item.rates, selectedCurrencies);
+    const rate = calcCurrencyPairRate(item.rates, selectedCurrencies) || 0;
     return {
       date: item.date,
-      rate: rate!.toFixed(4),
-      amount: (rate! * baseCurrencyAmount).toFixed(4),
+      rate: rate.toFixed(4),
+      amount: (rate * baseCurrencyAmount).toFixed(4),
     };
   });
 

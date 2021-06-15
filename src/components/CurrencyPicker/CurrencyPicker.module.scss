@@ -2,11 +2,21 @@
   width: 90%;
   max-width: 400px;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   margin: 16px 0;
+
+  .picker {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
 }
 
 .menu {
   height: 200px;
   overflow: auto;
+}
+
+.ant-dropdown-button {
+  width: 25% !important;
 }

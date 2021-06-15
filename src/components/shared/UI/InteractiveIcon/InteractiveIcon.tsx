@@ -1,11 +1,19 @@
-import { StarOutlined, StarFilled, StarTwoTone } from "@ant-design/icons";
+import { StarOutlined, StarFilled } from "@ant-design/icons";
 
 import { TInteractiveIconProps } from "./types";
 
-const InteractiveIcon = ({ classes }: TInteractiveIconProps) => {
+const InteractiveIcon = ({
+  classes,
+  onClick,
+  isFilled,
+}: TInteractiveIconProps) => {
   return (
     <div className={classes}>
-      <StarOutlined />
+      {isFilled ? (
+        <StarFilled onClick={onClick} />
+      ) : (
+        <StarOutlined onClick={onClick} />
+      )}
     </div>
   );
 };

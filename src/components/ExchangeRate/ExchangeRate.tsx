@@ -13,11 +13,21 @@ const ExchangeRate = ({ header, currentRateDetails }: TExchangeRateProps) => {
     <div className={styles.container}>
       <div className={styles.inputGroup}>
         <h3>{header}</h3>
-        <InputField value={currentRateDetails.value} size="large" isDisabled />
+        <InputField
+          id="ExchangeRate_Input_CurrentValue"
+          value={currentRateDetails.value}
+          size="large"
+          isDisabled
+        />
       </div>
       <div className={styles.inputGroup}>
         <h3>Current exchange rate</h3>
-        <InputField value={currentRateDetails.rate} size="large" isDisabled />
+        <InputField
+          id="ExchangeRate_Input_CurrentRate"
+          value={currentRateDetails.rate.toFixed(4)}
+          size="large"
+          isDisabled
+        />
       </div>
       <h5>As of: {getAndParseTodaysDate()}</h5>
     </div>

@@ -1,4 +1,10 @@
 .container {
-  width: 90%;
+  display: flex;
   max-width: 400px;
+  width: 90%;
+
+  .rangePicker {
+    width: 100%;
+    max-width: 400px;
+  }
 }

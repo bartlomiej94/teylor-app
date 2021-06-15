@@ -25,6 +25,7 @@ const DropdownMenu = ({
       overlay={menu}
       placement="bottomRight"
       icon={<DownOutlined />}
+      trigger={["click", "hover"]}
     >
       {title}
     </Dropdown.Button>

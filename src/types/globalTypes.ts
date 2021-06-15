@@ -24,3 +24,8 @@ export type G_TRateDetails = {
   rate: number;
   value: number;
 };
+
+export type G_TNameWithFavoriteFlag = {
+  name: string;
+  isFavorite: boolean;
+};
